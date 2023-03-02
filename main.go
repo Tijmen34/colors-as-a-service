@@ -61,7 +61,7 @@ func main() {
 	r.GET("/api/color/:colorName/image", getColorImage)
 
 	log.Info().Msg("Starting server on port 8080")
-	r.Run("localhost:8080")
+	r.Run(":8080")
 }
 
 type Color struct {
